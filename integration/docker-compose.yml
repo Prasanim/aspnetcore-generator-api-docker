@@ -4,11 +4,10 @@ services:
   generator:
     build:
       context: .
-    image: prasanim/aspnetcoregeneratorpipeline:multi
+    image: my-registry:55000/dockeraspnetcore:ci-8
     ports:
       - "8080:80"
   mailpipeline:
     image: mailhog/mailhog
     ports:
       - "8025:8025"
-      - "1025:1025"
