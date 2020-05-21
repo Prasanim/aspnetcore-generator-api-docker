@@ -28,7 +28,7 @@ namespace integration
             using (var response = await client.SendAsync(sendEmail))
             {
                 response.EnsureSuccessStatusCode();
-            }            
+            }
 
             // check if email
             var checkEmails = new HttpRequestMessage

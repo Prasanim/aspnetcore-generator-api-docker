@@ -4,10 +4,10 @@ services:
   generator:
     build:
       context: .
-    image: prasanim/aspnetcoregeneratorpipeline:multi
+    image: aspnetcore/generator:multi
     ports:
       - "8080:80"
-  mailpipeline:
+  mail:
     image: mailhog/mailhog
     ports:
       - "8025:8025"
